@@ -1,3 +1,12 @@
+
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+/////////////CECI EST UNE VERSION DE TESTING///////////
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+
 // 1- CMD intaller express : npm install express --save
 var express = require('express');
 var app = express();
@@ -32,8 +41,13 @@ app.get('/contact', function (req, res) {
 });*/
 
 
-app.listen("3030", function () {
+/*app.listen("3030", function () {
   console.log("Server listening on port 3030");
+});
+*/
+var port = (process.env.PORT || 3031);
+app.listen(port, function (){
+  console.log("Server listening on port 3031");
 });
 
 // fichier "views" inscrire 
