@@ -26,9 +26,9 @@ app.get('/', function (req, res) {
 app.get('/home', function (req, res) {
   res.render('home');
 });
-app.get('/formulaire', function (req, res) {
+/*app.get('/formulaire', function (req, res) {
     res.render('formulaire');
-});
+});*/
 /*
 app.get('/single', function (req, res) {
   res.render('single');
