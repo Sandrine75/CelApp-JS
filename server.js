@@ -8,12 +8,15 @@
 
 
 // 1- CMD intaller express : npm install express --save
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
 
 //Installer EJS dans le front end : npm install ejs --save
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
+
+// ecoute du server
+const port = (process.env.PORT || 3031);
 
 // 2- CMD installer base de donnée : npm install mongodb
         //var mongoose= require('mongoose');
@@ -45,8 +48,8 @@ app.get('/contact', function (req, res) {
   console.log("Server listening on port 3030");
 });
 */
-var port = (process.env.PORT || 3031);
-app.listen(port, function (){
+
+app.listen(port, () => {
   console.log("Server listening on port 3031");
 });
 
